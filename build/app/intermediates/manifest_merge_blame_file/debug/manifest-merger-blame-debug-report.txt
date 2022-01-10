@@ -1,0 +1,143 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.test_task"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:47:5-66
+14-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:47:22-64
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:48:5-65
+15-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:48:22-63
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:49:5-80
+16-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:49:22-78
+17    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+17-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+17-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+18    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+18-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
+18-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-76
+19
+20    <application
+20-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:3:4-46:19
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.3.0] C:\Users\SrajAldeen Company\.gradle\caches\transforms-2\files-2.1\a69d6fcd21e670073cd9cab171299398\core-1.3.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:5:9-43
+24        android:label="test_task" >
+24-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:4:9-34
+25        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReciver" >
+25-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:6:8-10:20
+25-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:6:18-105
+26            <intent-filter>
+26-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:7:12-9:28
+27                <action android:name="android.intent.action.BOOT_COMPLETED" />
+27-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:8:16-78
+27-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:8:24-75
+28            </intent-filter>
+29        </receiver>
+30
+31        <activity
+31-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:11:9-40:20
+32            android:name="com.example.test_task.MainActivity"
+32-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:12:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:15:13-163
+34            android:hardwareAccelerated="true"
+34-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:16:13-47
+35            android:launchMode="singleTop"
+35-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:13:13-43
+36            android:theme="@style/LaunchTheme"
+36-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:14:13-47
+37            android:windowSoftInputMode="adjustResize" >
+37-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:17:13-55
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+45-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:23:13-26:17
+46                android:name="io.flutter.embedding.android.NormalTheme"
+46-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:24:15-70
+47                android:resource="@style/NormalTheme" />
+47-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:25:15-52
+48            <!--
+49                 Displays an Android View that continues showing the launch screen
+50                 Drawable until Flutter paints its first frame, then this splash
+51                 screen fades out. A splash screen is useful to avoid any visual
+52                 gap between the end of Android's launch screen and the painting of
+53                 Flutter's first frame.
+54            -->
+55            <meta-data
+55-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:32:13-35:17
+56                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+56-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:33:15-79
+57                android:resource="@drawable/launch_background" />
+57-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:34:15-61
+58
+59            <intent-filter>
+59-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:36:13-39:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:37:17-68
+60-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:37:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:38:17-76
+62-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:38:27-74
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+69-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:43:9-45:33
+70            android:name="flutterEmbedding"
+70-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:44:13-44
+71            android:value="2" />
+71-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:45:13-30
+72
+73        <receiver
+73-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-15:40
+74            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+74-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-97
+75            android:exported="false" />
+75-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+76        <receiver
+76-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-25:20
+77            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+77-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-101
+78            android:exported="false" >
+78-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+79            <intent-filter>
+79-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-24:29
+80                <action android:name="android.intent.action.BOOT_COMPLETED" />
+80-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:8:16-78
+80-->C:\Users\SrajAldeen Company\StudioProjects\test_task\android\app\src\main\AndroidManifest.xml:8:24-75
+81                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+81-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-84
+81-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-81
+82                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+82-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-82
+82-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-79
+83                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+83-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:17-82
+83-->[:flutter_local_notifications] C:\Users\SrajAldeen Company\StudioProjects\test_task\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:25-79
+84            </intent-filter>
+85        </receiver>
+86    </application>
+87
+88</manifest>
