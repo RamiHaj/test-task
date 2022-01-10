@@ -28,12 +28,6 @@ class LoginController extends GetxController with StateMixin
 
   final Rx<IconData> suffix = Icons.visibility_off.obs;
 
-  // @override
-  // void onInit() {
-  //   // change(null ,status:  );
-  //   super.onInit();
-  // }
-
   void changeIcon()
   {
     isVisible.value = !isVisible.value;
@@ -57,7 +51,6 @@ class LoginController extends GetxController with StateMixin
   required String password,
 })async
   {
-    // change(authRepository , status: RxStatus.loading());
     try
     {
       var response = await authRepository.loginUser(name: name, password: password);
@@ -68,7 +61,6 @@ class LoginController extends GetxController with StateMixin
     {
       withException(exception: error);
     }
-    // change(authRepository , status: RxStatus.success());
   }
 
   void setUser()
