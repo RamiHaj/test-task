@@ -1,0 +1,138 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8589052386386415030",
+      "lastPropertyId": "3:7402270574866273032",
+      "name": "Market",
+      "properties": [
+        {
+          "id": "1:4545299448187115517",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2845880362545708293",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:7402270574866273032",
+          "name": "address",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:6482807724286733120",
+      "lastPropertyId": "8:6026185898087695866",
+      "name": "ProductElement",
+      "properties": [
+        {
+          "id": "1:834411817067052528",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5555049391915661910",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2326377184377449426",
+          "name": "price",
+          "type": 6
+        },
+        {
+          "id": "4:4468656951562382323",
+          "name": "rate",
+          "type": 8
+        },
+        {
+          "id": "5:3647054194328066858",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "6:8034198478270214221",
+          "name": "imageUrl",
+          "type": 9
+        },
+        {
+          "id": "7:7062877717473568914",
+          "name": "count",
+          "type": 6
+        },
+        {
+          "id": "8:6026185898087695866",
+          "name": "marketId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:6619731454828555034",
+          "relationTarget": "Market"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:5860345452715664718",
+      "lastPropertyId": "7:533931192156276800",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:6838990546750879396",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7751195177601746353",
+          "name": "isLog",
+          "type": 1
+        },
+        {
+          "id": "3:4165462413696803",
+          "name": "userName",
+          "type": 9
+        },
+        {
+          "id": "4:6647354591428286671",
+          "name": "password",
+          "type": 9
+        },
+        {
+          "id": "5:8475696885033359934",
+          "name": "fullName",
+          "type": 9
+        },
+        {
+          "id": "6:6206052698883209596",
+          "name": "phoneNumber",
+          "type": 9
+        },
+        {
+          "id": "7:533931192156276800",
+          "name": "city",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:5860345452715664718",
+  "lastIndexId": "1:6619731454828555034",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
